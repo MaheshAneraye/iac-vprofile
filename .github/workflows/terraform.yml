@@ -48,7 +48,8 @@ jobs:
         id: fmt
         run: terraform fmt -check
 
-      - name: Terraform validate          id: validate
+      - name: Terraform validate          
+        id: validate
         run: terraform validate
       
       - name: Terraform plan
